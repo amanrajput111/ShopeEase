@@ -4,7 +4,7 @@ const authMiddleware = (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;
 
-    console.log("AUTH HEADER:", authHeader);
+    // console.log("AUTH HEADER:", authHeader);
 
     if (!authHeader) {
       return res.status(401).json({
@@ -22,14 +22,14 @@ const authMiddleware = (req, res, next) => {
 
     const token = authHeader.split(" ")[1];
 
-    console.log("TOKEN:", token);
+    // console.log("TOKEN:", token);
 
     const decoded = jwt.verify(
       token,
       process.env.JWT_SECRET
     );
 
-    console.log("DECODED USER:", decoded);
+    // console.log("DECODED USER:", decoded);
 
     req.user = decoded;
 
