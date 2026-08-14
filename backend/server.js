@@ -20,15 +20,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser());
 
- app.use(
-  cors({
-    origin: [
-      "https://shopeease-2.onrender.com",
-      "https://shopease-3.onrender.com",
-    ],
-    credentials: true,
-  })
-);
+ app.use(cors());
   
 ConnectDB()
 
