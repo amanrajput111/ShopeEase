@@ -14,7 +14,7 @@ const handleSubmit = async (e) => {
 
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/users/login",
+      "https://shopeease-2.onrender.com/api/users/login",
 
       
       {

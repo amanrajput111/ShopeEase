@@ -39,7 +39,7 @@ const ProductDetails = () => {
       setLoading(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/products/${id}`
+        `https://shopeease-2.onrender.com/api/products/${id}`
       );
 
       const data = await response.json();

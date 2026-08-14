@@ -16,7 +16,7 @@ const Home = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api");
+      const response = await fetch("https://shopeease-2.onrender.com/api");
       const data = await response.json();
 
       if (data.products) {

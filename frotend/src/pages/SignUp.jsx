@@ -23,7 +23,7 @@ const SignupPage = () => {
         try{
 
     
-    const log = await axios.post('http://localhost:5000/api/users/register',{
+    const log = await axios.post('https://shopeease-2.onrender.com/api/users/register',{
          name,
          city,
          phone,

@@ -28,7 +28,7 @@ try {
         formData.append('image', image) // file object
       }
 
-      const product =  await  axios.post('http://localhost:5000/api/product', formData,{
+      const product =  await  axios.post('https://shopeease-2.onrender.com/api/product', formData,{
             withCredentials: true
       })
 

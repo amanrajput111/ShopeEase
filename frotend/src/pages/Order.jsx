@@ -19,7 +19,7 @@ export default function Order() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        "http://localhost:5000/api/orders",
+        "https://shopeease-2.onrender.com/api/orders",
         {
           headers: {
             Authorization: `Bearer ${token}`,
